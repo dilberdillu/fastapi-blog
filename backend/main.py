@@ -4,5 +4,5 @@ from core.config import settings
 app = FastAPI(title=settings.PROJECT_TITLE, version=settings.PROJECT_VERSION)
 
 @app.get("/")
-def Hello():
-    return {"msg": "Hello Fast API"}
+def hello():
+    return {"msg": "hello world!"}
